@@ -71,15 +71,15 @@ func getPage(page int) []extractJob {
 
 	doc, err := goquery.NewDocumentFromReader(res.Body)
 
+	extractStart := time.Now()
 	doc.Find(".jobCard_mainContent").Each(func(i int, card *goquery.Selection) {
 		job := extractJobs(card)
 		jobs = append(jobs, job)
 	})
+	log.Printf("extract job completion time. : %s", time.Since(extractStart))
 
 	defer res.Body.Close()
-	duration := time.Since(start)
-
-	log.Printf("Response and extract job completion time. : %s", duration)
+	log.Printf("Page process completion time. : %s", time.Since(start))
 	return jobs
 }
 

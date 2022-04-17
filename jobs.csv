@@ -18,16 +18,16 @@ new[NAVER Cloud] MLOps 서비스 개발,네이버클라우드,성남 분당구
 "Student Researcher Intern, 2022",구글코리아,서울 강남구
 new2022년 신입사원,사단법인 손해보험협회,서울 종로구
 2022년 메타버스 아카데미 1기 교육생,한국전파진흥협회,성남 분당구
+new침해사고대응 담당자 영입,카카오페이,성남 분당구
 new데이터 사이언티스트(Data Scientist) 영입,카카오페이,성남 분당구
 Software Engineer,구글코리아,서울 강남구
 new[R&D] 모션컨트롤 개발자,오스템임플란트,서울 강서구
 각 부문별,네이버제트,성남 분당구
 각 부문별,KB데이타시스템,서울 마포구
-new침해사고대응 담당자 영입,카카오페이,성남 분당구
 각 부문별,직방,서울 종로구
 [신용리스크모델링] 개인/개인사업자 신용평가모형 개발 및 운영 담당자,한국카카오은행,성남 분당구
-[CA] 딥러닝 엔지니어,한국카카오은행,성남 분당구
 newSearch Engineer (Engineering),비바리퍼블리카,서울 강남구
+[CA] 딥러닝 엔지니어,한국카카오은행,성남 분당구
 [LX세미콘] 2022년 4월 경력사원,엘엑스세미콘,대전 유성구
 [CA] 웹 스크래핑 엔지니어,한국카카오은행,성남 분당구
 newLG이노텍,신입,경기도 안산
@@ -43,11 +43,11 @@ new2022년 디알텍(주) 신입/경력,디알텍,성남 중원구
 기술 인턴 인공지능 응용 연구/개발 인턴,써로마인드로보틱스,서울 관악구
 newData Scientist (토스신용데이터),비바리퍼블리카,서울 강남구
 [NHN COMMERCE] 데이터 엔지니어,엔에이치엔커머스,서울 구로구
+"new[신입,경력 무관] 영상 인식 알고리즘 개발자",몹티콘,서울 구로구
 Data Analyst,KidsLoop,서울
 2022년 새일직업교육훈련 교육생,용산여성인력개발센터,서울 용산구
 Data Engineering 분야 전문가/개발자,에스케이텔레콤,서울 중구
 newSystem Engineer (토스뱅크),비바리퍼블리카,서울 강남구
-"new[신입,경력 무관] 영상 인식 알고리즘 개발자",몹티콘,서울 구로구
 newML Engineer,비바리퍼블리카,서울 강남구
 newASIC Design Engineer,HP,경기도 성남
 newBigData 개발 및 운영 담당 영입,카카오페이증권,성남 분당구
@@ -62,8 +62,8 @@ newData Engineer,비바리퍼블리카,서울 강남구
 딥러닝 AI 개발 연구원,베이리스,성남 수정구
 "Staff, Data Analyst (ROD)",Coupang,서울
 [고객서비스] 데이터 분석 및 예측모형 개발 담당자,한국카카오은행,성남 분당구
-newSystem Engineer (토스씨엑스),비바리퍼블리카,서울 강남구
 newLG이노텍,무관,서울 마곡역
+newSystem Engineer (토스씨엑스),비바리퍼블리카,서울 강남구
 newCloud Engineer,IBM,서울
 [하나금융융합기술원] Bigdata&AI 연구/엔지니어 부문 (~4/18),하나금융티아이,서울 강남구
 Solana Dapp Developer,MIND AI,서울
@@ -120,9 +120,9 @@ new블록체인 플랫폼 구축 및 운영,위메이드엔터테인먼트,성�
 GC케어 Data 분석,녹십자헬스케어,서울 영등포구
 [쿠키런 : 마녀의성] 데이터 분석가,데브시스터즈,서울 강남구
 A.I.개발자,파이프트리스마트팜,서울 송파구
-new[현대무벡스] 경력사원 상시,현대무벡스,서울 종로구
 [NHN] 인사운영,NHN] [NHN,성남 판교역
 CalCM Product Engineer,Siemens,경기도 성남
+new[현대무벡스] 경력사원 상시,현대무벡스,서울 종로구
 [NAVER Cloud] Media 서비스 개발,네이버클라우드,성남 분당구
 Software Engineer - Python and K8s,Canonical - Jobs,서울
 Vision AI 알고리즘 및 응용서비스 개발자,에스케이텔레콤,성남 분당구
@@ -132,7 +132,6 @@ newData Engineer Eng,뤼이드,서울 강남구
 "S/W 엔지니어, 데이터분석 신입/경력 정규직, 인턴",가치랩스,성남 분당구
 [FashionGo korea] 추천 시스템 개발,NHN FashionGo korea] [FashionGo korea,성남 판교역
 [TmaxEdu/R&D] 연구 개발자,티맥스소프트,성남 분당구
-newCloud기반 Backend개발자,에스케이텔레콤,서울 중구
 newCore망 시스템 운용 전문가(수도권),에스케이텔레콤,서울 동작구
 newDBA (토스신용데이터),비바리퍼블리카,서울 강남구
 new[리니지2] MMORPG 서버 프로그래머 모집,엔씨소프트,성남 판교역
@@ -152,6 +151,7 @@ Data Engineer,Soomgo,서울 강남구
 Data Engineer (Supply Chain Optimization),머크,서울 강남구
 [전문연구요원 신규편입/전직] SW Engineer/Backend/Frontend 개발자,뷰노코리아,서울 서초구
 DevSecOps Engineer,IBM,서울
+newCloud기반 Backend개발자,에스케이텔레콤,서울 중구
 [외국계 스타트업 미소] Business Analyst,유한회사 미소,서울
 new[글로벌디지털마케팅 ] 데이터 분석 각 분야별 장애인,콘센트릭스서비스코리아,서울 강남구
 newDevSecOps 엔지니어,위메이드엔터테인먼트,성남 분당구
@@ -195,7 +195,6 @@ newData Engineer (Analytics),비바리퍼블리카,서울 강남구
 newSr. 데이터 엔지니어,메쉬코리아,서울 강남구
 newDBA,비바리퍼블리카,서울 강남구
 "영상처리, 컴퓨터 비전 전문가 (신입/경력)",에바,성남 수정구
-데이터 엔지니어 (Data Engineer),뱅크샐러드,서울 영등포구
 머신러닝 Integration 담당자 영입,캐롯,서울 중구
 Data Scientist,컬리,서울 강남구
 백엔드 플랫폼 개발 유지보수,아프리카TV,경기도 성남
@@ -215,7 +214,6 @@ newQA Manager,비바리퍼블리카,서울 강남구
 new(주)이포즌 자사솔루션 개발팀 팀장,이포즌,서울 성동구
 new지능형 RPA 시스템 개발(AA) / 5개월,스피링크,서울 용산구
 [대기업] 데이터분석가 경력 (대리~과장급 2명),에이치알니즈,서울
-newRisk Manager (신용 RWA),비바리퍼블리카,서울 강남구
 new[NAVER Cloud] Video Conference 서비스 개발,네이버클라우드,성남 분당구
 5. 인프라개발팀 백엔드 개발자,카카오브이엑스 (KAKAO VX),성남 분당구
 new[교보생명보험] FY2022 상반기 신입사원,교보생명보험,서울 종로구
@@ -223,13 +221,14 @@ newAI 모빌리티 서비스의 미래 함께 열어갈 우수한 인재 찾습�
 "Software Engineer, Robotics",Bear Robotics,서울
 new위고블록체인 연구소 연구원,위고컴퍼니,서울 서초구
 new데이터 사이언티스트,컬리,서울 강남구
+newML Modeler,비바리퍼블리카,서울 강남구
 newAutomotive Sensor Fusion Algorithm Engineer,Aptiv,경기도 용인
 newData Engineer (Platform) (토스증권),비바리퍼블리카,서울 강남구
 newData Engineer (Platform),비바리퍼블리카,서울 강남구
 MLOps 플랫폼 연구/개발 경력 모집,CJ올리브네트웍스,성남 서현동
+newRisk Manager (신용 RWA),비바리퍼블리카,서울 강남구
 [NAVER Cloud] 리눅스 배포판 개발,네이버클라우드,성남 분당구
 하반기 인턴직 모집,한솔그룹,서울 을지로2가
-newML Modeler,비바리퍼블리카,서울 강남구
 new차세대 AAA 게임 테크니컬 아티스트 모집,엔씨소프트,성남 판교역
 new[신사업부문] Data Scientist (데이터분석) 경력채용,한화그룹,서울
 Mid-level Software Engineer (Full-Stack Backend),BOEING,서울
@@ -249,3 +248,4 @@ Data Scientist,KB데이타시스템,서울 마포구
 [SM]고급/JAVA/9개월/분당정자,원스링크,성남 분당구
 [CJ Olivenetworks/경력] 취약점 점검 및 모의해킹,씨제이올리브네트웍스,서울 용산구
 마케팅팀 블록체인 기반 서비스 개발자,카카오브이엑스 (KAKAO VX),성남 분당구
+new[NAVER Cloud] MongoDB 데이터베이스 엔지니어 (DBA),네이버클라우드,성남 분당구
