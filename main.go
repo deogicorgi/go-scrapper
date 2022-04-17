@@ -23,13 +23,18 @@ type extractJob struct {
 func main() {
 	start := time.Now()
 
+	mc := make(chan []extractJob)
+
 	var jobs []extractJob
 
 	totalPages := getPages()
 
 	for i := 0; i < totalPages; i++ {
-		extratedJobs := getPage(i)
-		jobs = append(jobs, extratedJobs...)
+		go getPage(i, mc)
+	}
+
+	for i := 0; i < totalPages; i++ {
+		jobs = append(jobs, <-mc...)
 	}
 
 	writeJobs(jobs)
@@ -39,6 +44,9 @@ func main() {
 }
 
 func writeJobs(jobs []extractJob) {
+
+	wc := make(chan bool)
+
 	file, err := os.Create("jobs.csv")
 	checkErr(err)
 
@@ -50,14 +58,23 @@ func writeJobs(jobs []extractJob) {
 	checkErr(wErr)
 
 	for _, job := range jobs {
-		jwErr := w.Write([]string{job.title, job.companyName, job.address})
-		checkErr(jwErr)
+		go writeJob(w, []string{job.title, job.companyName, job.address}, wc)
+	}
+
+	for i := 0; i < len(jobs); i++ {
+		<-wc
 	}
 
 	defer w.Flush()
 }
 
-func getPage(page int) []extractJob {
+func writeJob(w *csv.Writer, job []string, wc chan bool) {
+	jwErr := w.Write(job)
+	checkErr(jwErr)
+	wc <- true
+}
+
+func getPage(page int, mc chan<- []extractJob) {
 	start := time.Now()
 	var jobs []extractJob
 
@@ -87,8 +104,8 @@ func getPage(page int) []extractJob {
 
 	log.Printf("Page process completion time. : %s", time.Since(start))
 
+	mc <- jobs
 	defer res.Body.Close()
-	return jobs
 }
 
 func getPages() int {
