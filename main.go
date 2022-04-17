@@ -34,9 +34,7 @@ func main() {
 
 	writeJobs(jobs)
 
-	duration := time.Since(start)
-
-	log.Printf("Job scrapper total execute time : %s", duration)
+	log.Printf("Job scrapper total execute time : %s", time.Since(start))
 
 }
 
@@ -62,6 +60,9 @@ func writeJobs(jobs []extractJob) {
 func getPage(page int) []extractJob {
 	start := time.Now()
 	var jobs []extractJob
+
+	c := make(chan extractJob)
+
 	pageUrl := baseUrl + "&start=" + strconv.Itoa(page*50)
 	log.Println("Request URL : " + pageUrl)
 
@@ -71,15 +72,22 @@ func getPage(page int) []extractJob {
 
 	doc, err := goquery.NewDocumentFromReader(res.Body)
 
-	doc.Find(".jobCard_mainContent").Each(func(i int, card *goquery.Selection) {
-		job := extractJobs(card)
-		jobs = append(jobs, job)
+	cards := doc.Find(".jobCard_mainContent")
+
+	extractStart := time.Now()
+	cards.Each(func(i int, card *goquery.Selection) {
+		go extractJobs(card, c)
 	})
+	log.Printf("extract job completion time. : %s", time.Since(extractStart))
+
+	for i := 0; i < cards.Length(); i++ {
+		job := <-c
+		jobs = append(jobs, job)
+	}
+
+	log.Printf("Page process completion time. : %s", time.Since(start))
 
 	defer res.Body.Close()
-	duration := time.Since(start)
-
-	log.Printf("Response and extract job completion time. : %s", duration)
 	return jobs
 }
 
@@ -100,12 +108,12 @@ func getPages() int {
 	return pages
 }
 
-func extractJobs(card *goquery.Selection) extractJob {
+func extractJobs(card *goquery.Selection, c chan<- extractJob) {
 	jobTitle := clearString(card.Find(".jobTitle").Text())
 	companyName := clearString(card.Find(".companyName").Text())
 	address := clearString(card.Find(".companyLocation").Text())
 
-	return extractJob{title: jobTitle, address: address, companyName: companyName}
+	c <- extractJob{title: jobTitle, address: address, companyName: companyName}
 }
 
 func checkErr(err error) {
